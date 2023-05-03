@@ -1,0 +1,394 @@
+/* google fonts (play fonts not used) */
+/* font-family: "Play", sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Play:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(images/R.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  background: none;
+}
+
+.navbar a {
+  font-family: "Alkatra", cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.3s ease;
+}
+
+.nav-bg {
+  background: rgb(255, 164, 180);
+  transition: all 0.3s ease-out;
+  z-index: 5;
+}
+
+.logo {
+  width: 51px;
+  border: 0.5px solid rgb(255, 164, 180);
+  border-radius: 50%;
+}
+
+.left-nav {
+  width: 20%;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.nav-btn {
+  display: none;
+  background: none;
+  border: 2px solid white;
+  padding: 3px;
+  border-radius: 20%;
+  position: absolute;
+  top: 2.5px;
+  right: 2.5px;
+}
+
+.bar {
+  display: block;
+  height: 2px;
+  width: 10px;
+  background-color: white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.nav-btn:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+header {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  background-image: url(images/R.jpg);
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.animation {
+  display: inline-block;
+}
+
+.text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typing 3s steps(15, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: ui-monospace;
+  line-height: 1.5;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.btn {
+  font-size: 1.3rem;
+  border: 3px solid white;
+  padding: 1%;
+  border-radius: 0.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+  margin-top: 2vh;
+  background-color: #ffa4b4;
+  position: relative;
+}
+
+.btn:hover {
+  border: 3px solid rgb(0, 89, 255);
+  color: rgb(0, 89, 255);
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 216px;
+  margin: 2vh;
+  border: 7px solid white;
+  border-radius: 50%;
+}
+
+#about {
+  background-color: rgb(240, 240, 240);
+}
+
+.para-sm {
+  font-size: 1.2rem;
+  font-family: math;
+  text-align: center;
+  color: gray;
+  padding-top: 7px;
+}
+
+h2 {
+  text-align: center;
+  word-spacing: -8px;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+h2::after {
+  display: block;
+  height: 2.5px;
+  background-color: #ffa4b4;
+  content: "";
+  width: 105px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.abt-card {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.abt-container {
+  padding: 10px;
+  padding-top: 45px;
+}
+
+.abt-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abt-heading {
+  font-size: 1.6rem;
+  color: #7c7c7c;
+  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+  text-align: center;
+  padding: 2px;
+}
+
+.card-description {
+  color: black;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px;
+  font-family: math;
+}
+
+.more-desc {
+  color: black;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 5px;
+  margin-left: 14px;
+  font-family: math;
+}
+
+#services {
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-template: "2 2";
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1vw;
+  margin: 5px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+.card-heading {
+  font-size: 1.6rem;
+  color: #7c7c7c;
+  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+}
+
+footer {
+  display: grid;
+  background-color: dimgray;
+  color: white;
+  grid-template-areas: "a b c";
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#contact {
+  grid-area: a;
+  margin-left: 5px;
+}
+
+#follow {
+  grid-area: b;
+  margin-bottom: 5px;
+}
+
+#address {
+  grid-area: c;
+}
+
+h4 {
+  margin: 5px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 3px;
+}
+
+.foot {
+  display: flex;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 830px) {
+  .main {
+    flex-direction: column-reverse;
+    padding-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .right-nav {
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    background-color: dimgray;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .opacity {
+    visibility: collapse;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  footer {
+    grid-template-areas:
+      "a b"
+      ". c";
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .card-heading {
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+  .content {
+    text-align: -webkit-center;
+  }
+  footer {
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .img-sm {
+    width: 200px;
+  }
+  .card {
+    width: -webkit-fill-available;
+  }
+}
