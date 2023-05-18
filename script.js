@@ -36,3 +36,25 @@ if (btn) {
 } else {
   console.error('button not found');
 }
+
+// functions for buttons
+
+function scrollToAbout() {
+  let section = document.getElementById("the-about");
+  let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+
+  window.scrollTo({
+    top: sectionPosition,
+    behavior: "smooth"
+  });
+}
+
+function scrollToContact() {
+  let section = document.getElementById("the-contact");
+  let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+
+  window.scrollTo({
+    top: sectionPosition,
+    behavior: "smooth"
+  });
+}
