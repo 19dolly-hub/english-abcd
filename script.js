@@ -40,7 +40,7 @@ if (btn) {
 // functions for buttons
 
 function scrollToAbout() {
-  let section = document.getElementById("the-about");
+  let section = document.getElementById("about");
   let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
 
   window.scrollTo({
@@ -50,7 +50,7 @@ function scrollToAbout() {
 }
 
 function scrollToContact() {
-  let section = document.getElementById("the-contact");
+  let section = document.getElementById("contact");
   let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
 
   window.scrollTo({
