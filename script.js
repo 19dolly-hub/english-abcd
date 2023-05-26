@@ -1,4 +1,22 @@
 
+// Show the loading animation
+function showLoadingAnimation() {
+  var loadingContainer = document.getElementById('loading-container');
+  loadingContainer.style.display = 'flex';
+}
+
+// Hide the loading animation
+function hideLoadingAnimation() {
+  var loadingContainer = document.getElementById('loading-container');
+  loadingContainer.style.display = 'none';
+}
+
+// Trigger the loading animation when the webpage starts loading
+window.addEventListener('load', function() {
+  hideLoadingAnimation();
+});
+
+
 // adding bg to navbar on scroll
 
 let nav = document.querySelector('.navbar');
