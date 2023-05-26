@@ -11,7 +11,7 @@ function addBg() {
 let el = document;
 
 if (el) {
-  console.log('document found');
+  // console.log('document found');
   el.addEventListener('scroll', addBg);
 } else {
   console.error('Document element not found');
@@ -22,7 +22,7 @@ if (el) {
 let rightNav = document.querySelector('.right-nav');
 
 function sideNav() {
-  console.log('click detected');
+  // console.log('click detected');
   rightNav.classList.toggle('opacity');
 }
 
