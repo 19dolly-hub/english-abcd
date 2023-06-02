@@ -362,19 +362,7 @@ address {
   font-style: normal;
 }
 
-<<<<<<< HEAD
 /* Media Queries */
-=======
-
-#copy{
-  color: #fff;
-  text-align: center;
-  padding: 20px 0 20px 0;
-  grid-area: d;
-}
-
-/* media queries */
->>>>>>> ff0054549aac87a47640e9dbe8df497b6349e468
 
 @media only screen and (max-width: 830px) {
   .main {
