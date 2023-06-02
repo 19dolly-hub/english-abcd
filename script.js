@@ -12,12 +12,12 @@ function hideLoadingAnimation() {
 }
 
 // Trigger the loading animation when the webpage starts loading
-window.addEventListener('load', function() {
-  hideLoadingAnimation();
-});
+window.addEventListener('load', () => {
+    hideLoadingAnimation();
+  });
 
 
-// adding bg to navbar on scroll
+// Add bg to Navbar on scroll
 
 let nav = document.querySelector('.navbar');
 
@@ -35,8 +35,7 @@ if (el) {
   console.error('Document element not found');
 }
 
-// changing navbar style according to screen size
-
+// Change Navbar style According to screen size
 let rightNav = document.querySelector('.right-nav');
 
 function sideNav() {
@@ -44,8 +43,7 @@ function sideNav() {
   rightNav.classList.toggle('opacity');
 }
 
-// activating side nav on click
-
+// Activate side Nav on click
 let btn = document.querySelector('.nav-btn');
 
 if (btn) {
@@ -55,8 +53,7 @@ if (btn) {
   console.error('button not found');
 }
 
-// function for buttons
-
+// Functions for Buttons
 function scrollToSection(id) {
   let section = document.querySelector(id);
   if (section) {

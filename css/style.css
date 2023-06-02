@@ -3,7 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Play:wght@700&display=swap");
 
-/* loading animation */
+/* Loading Animation */
 #loading-container {
   position: fixed;
   top: 0;
@@ -22,7 +22,7 @@
   height: 50px;
   border-radius: 50%;
   border: 5px solid #000;
-  border-top-color: #ff0000;
+  border-top-color: rgb(255, 164, 180);
   animation: spin 1s linear infinite;
 }
 
@@ -52,6 +52,7 @@ body {
   background-size: cover;
 }
 
+/* Navigation Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -96,6 +97,7 @@ body {
   width: 80%;
 }
 
+/* Hamburger Styles */
 .nav-btn {
   display: none;
   background: none;
@@ -122,6 +124,7 @@ body {
   cursor: pointer;
 }
 
+/* Home Section Styles */
 header {
   color: white;
   margin-left: auto;
@@ -146,6 +149,7 @@ h1 {
   margin-bottom: 4vh;
 }
 
+/* Typing Animation */
 .animation {
   display: inline-block;
 }
@@ -173,11 +177,12 @@ p {
   line-height: 1.5;
 }
 
-span {
+.content span {
   font-size: 2rem;
   font-weight: bolder;
 }
 
+/* Buttons Styles */
 .btn {
   font-size: 1.3rem;
   border: 3px solid white;
@@ -204,6 +209,7 @@ span {
   border-radius: 50%;
 }
 
+/* Other Section Styles */
 #about {
   background-color: rgb(240, 240, 240);
 }
@@ -309,6 +315,7 @@ h2::after {
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
 }
 
+/* Footer Styles */
 footer {
   display: grid;
   background-color: dimgray;
@@ -333,7 +340,7 @@ footer {
   grid-area: c;
 }
 
-h4 {
+footer h4 {
   margin: 5px;
 }
 
@@ -355,7 +362,6 @@ address {
   font-style: normal;
 }
 
-
 #copy{
   color: #fff;
   text-align: center;
@@ -363,7 +369,7 @@ address {
   grid-area: d;
 }
 
-/* media queries */
+/* Media Queries */
 
 @media only screen and (max-width: 830px) {
   .main {
