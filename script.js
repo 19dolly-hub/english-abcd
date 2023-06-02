@@ -55,24 +55,12 @@ if (btn) {
   console.error('button not found');
 }
 
-// functions for buttons
+// function for buttons
 
-function scrollToAbout() {
-  let section = document.getElementById("about");
-  let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
-
-  window.scrollTo({
-    top: sectionPosition,
-    behavior: "smooth"
-  });
-}
-
-function scrollToContact() {
-  let section = document.getElementById("contact");
-  let sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
-
-  window.scrollTo({
-    top: sectionPosition,
-    behavior: "smooth"
-  });
+function scrollToSection(id) {
+  let section = document.querySelector(id);
+  if (section) {
+     setTimeout(function() {
+       section.scrollIntoView({ behavior: 'smooth' });
+     }, 100);   }
 }
