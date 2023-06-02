@@ -53,12 +53,7 @@ if (btn) {
   console.error('button not found');
 }
 
-<<<<<<< HEAD
 // Functions for Buttons
-=======
-// function for buttons
-
->>>>>>> ff0054549aac87a47640e9dbe8df497b6349e468
 function scrollToSection(id) {
   let section = document.querySelector(id);
   if (section) {
