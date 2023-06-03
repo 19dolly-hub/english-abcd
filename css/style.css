@@ -315,6 +315,17 @@ h2::after {
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
 }
 
+/* Developer information */
+#devlpr-info {
+  color: darkgray;
+  font-size: medium;
+}
+
+#devlpr-info a {
+  color: gray;
+  font-weight: 500;
+}
+
 /* Footer Styles */
 footer {
   display: grid;
