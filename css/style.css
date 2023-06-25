@@ -200,6 +200,7 @@ p {
   margin-top: 2vh;
   background-color: #ffa4b4;
   position: relative;
+  text-decoration: none;
 }
 
 .btn2:hover, #btn:hover {

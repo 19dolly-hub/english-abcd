@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <title>Contact Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .form-section {
+        color: white;
+        text-align: center;
+        margin: 0 65px;
+        padding: 20px;
+      }
+      .form-logo {
+        text-align: right;
+        margin: 10px 5px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-logo">
+      <img src="images/logo.png" alt="logo" class="logo" />
+    </div>
+    <!-- Button trigger modal -->
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        id="btn"
+      >
+        Contact Form
+      </button>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #ffa4b4">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Contact Form
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName name"
+                  aria-describedby="name"
+                  name="name"
+                />
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail email"
+                  aria-describedby="emailHelp"
+                  name="email"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="inputMsg" class="form-label">Your Message</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="inputMsg message"
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer> -->
+    <section class="form-section">
+      <section id="contact">
+        <h4>Email & Phone:</h4>
+        <div class="foot">
+          <img src="icons/email-icon.svg" alt="" width="22px" />
+          <p>sandy87rules@gmail.com</p>
+        </div>
+
+        <div class="foot">
+          <img src="icons/whatsapp-icon.svg" alt="" width="22px" />
+          <p>9827662450</p>
+        </div>
+      </section>
+      <hr />
+      <section id="follow">
+        <h4>Social Links:</h4>
+        <a
+          href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL"
+          target="_blank"
+          ><img src="icons/fb-icon.svg" alt="" class="icn"
+        /></a>
+        <a
+          href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM="
+          target="_blank"
+          ><img src="icons/insta-icon.svg" alt="" class="icn"
+        /></a>
+        <a href="https://www.youtube.com/@englishekkhoz8279" target="_blank"
+          ><img src="icons/yt-icon.svg" alt="" class="icn"
+        /></a>
+        <a href="https://t.me/englishistolearn" target="_blank"
+          ><img src="icons/telegram-icon.svg" alt="" class="icn"
+        /></a>
+      </section>
+      <hr />
+      <section id="address">
+        <h4>Registered office:</h4>
+        <div class="foot">
+          <a
+            href="https://goo.gl/maps/eDoeChhH15ab46Wv7"
+            target="_blank"
+            for="location"
+            ><img src="icons/loc-icon.svg" alt="" width="22px"
+          /></a>
+          <address id="location">
+            GANJ BASODA, Dist. Vidisha, M.P, India
+          </address>
+        </div>
+      </section>
+      <p id="copy">&copy; 2023 Sandeep Raghuwanshi. All rights reserved.</p>
+      <!-- </footer> -->
+    </section>
+  </body>
+</html>
