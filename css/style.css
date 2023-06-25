@@ -143,7 +143,7 @@ header {
   padding-bottom: 10vh;
 }
 
-.animation h1 {
+h1 {
   font-size: 3rem;
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
   margin-top: 4vh;
@@ -441,7 +441,7 @@ address {
   .card-heading {
     font-size: 1.5rem;
   }
-  span {
+  .content span {
     font-size: 1.5rem;
   }
   .content {
