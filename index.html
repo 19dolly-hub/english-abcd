@@ -4,34 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
     <title>ABCD BY SANDEEP SIR</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- animate on scroll css-->
-    
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
     <!-- my css -->
-    
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- loading animation -->
     <div id="loading-container">
       <div id="loading-animation"></div>
-    </div>    
-  
+    </div>
+
     <!-- navigation bar -->
 
     <nav class="navbar">
       <div class="left-nav">
-        <img src="images/logo.png" alt="logo" class="logo">
+        <img src="images/logo.png" alt="logo" class="logo" />
       </div>
       <div class="right-nav opacity">
         <a class="flex-item" href="#home">Home</a>
@@ -41,7 +52,6 @@
 
         <!-- reviews under construction -->
         <!-- <a class="flex-item" href="#reviews">Reviews</a> -->
-
       </div>
 
       <!-- hamburger -->
@@ -66,15 +76,107 @@
             Self Employed at my own run Coaching<br />
             <span>ABCD English Study Point</span> <br />
             in GANJ BASODA.
-         </p>
+          </p>
 
           <!-- the buttons for the sections to be highlighted -->
+          <div id="btn-flex">
+            <button class="btn2" onclick="scrollToSection('#about')">
+              Read more...
+            </button>
+            <!-- <button class="btn2" onclick="scrollToSection('#contact')">Contact me</button> -->
 
-          <button class="btn" onclick="scrollToSection('#about')">Read more...</button>
-          <button class="btn" onclick="scrollToSection('#contact')">Contact me</button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              id="btn"
+            >
+              Contact Me
+            </button>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" style="background-color: #ffa4b4;">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Contact Form
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="inputName" class="form-label"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName name"
+                        aria-describedby="name"
+                        name="name"
+                      />
+                      <label for="inputEmail" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail email"
+                        aria-describedby="emailHelp"
+                        name="email"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputMsg" class="form-label"
+                        >Your Message</label
+                      >
+                      <textarea
+                        type="text"
+                        class="form-control"
+                        id="inputMsg message"
+                        name="message"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="image">
-          <img src="images/img.png" alt="SANDEEP" class="profile-pic img-sm"/>
+          <img src="images/img.png" alt="SANDEEP" class="profile-pic img-sm" />
         </div>
       </div>
     </header>
@@ -82,56 +184,71 @@
     <!-- other sections -->
 
     <main>
-
       <!-- about section (with aos)-->
 
       <section id="about">
-          <p class="para-sm">About Me</p>
-          <h2>English Teacher & Private Tutoring</h2>
+        <p class="para-sm">About Me</p>
+        <h2>English Teacher & Private Tutoring</h2>
 
-          <div class="abt-container">
-            <div class="abt-head">
-              <img src="icons/goal-icon.svg" alt="goal-icon" width="45px">
-              <h3 class="abt-heading">My Mission</h3>
-            </div>
+        <div class="abt-container">
+          <div class="abt-head">
+            <img src="icons/goal-icon.svg" alt="goal-icon" width="45px" />
+            <h3 class="abt-heading">My Mission</h3>
+          </div>
 
-            <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-              <div class="abt1">
-                <p class="card-description">I am determined and committed to discover exciting and unique concepts of language English in well explained manner.</p>
-              </div>
-            </div>
-
-            <div class="abt-head">
-              <img src="icons/experience-icon.svg" alt="experience-icon" width="45px">
-              <h3 class="abt-heading">Experience</h3>
-            </div>
-
-            <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-              <div class="abt2">
-                <ul class="card-description">
-                  <li class="more-desc">I have 10 years of Teaching Experience.</li>
-                  <li class="more-desc">I teach everything about English Language :-</li> 
-                  <li class="more-desc">English Grammar, Spoken
-                  English, Competitive English English Literature, Formal and
-                  informal English, Written English, Oral English, School English,
-                  Foreign English, Indian English, Communicative English and anything
-                  or everything about English Language.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="abt-head">
-              <img src="icons/special-icon.svg" alt="" width="45px">
-              <h3 class="abt-heading">Special</h3>
-            </div>
-
-            <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-              <div class="abt3">
-                <p class="card-description">I give lectures on such topics as well e.g. Personality Development, Motivation, Spirituality, Life Philosophy, Human Psychology etc.</p>
-              </div>
+          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="abt1">
+              <p class="card-description">
+                I am determined and committed to discover exciting and unique
+                concepts of language English in well explained manner.
+              </p>
             </div>
           </div>
 
+          <div class="abt-head">
+            <img
+              src="icons/experience-icon.svg"
+              alt="experience-icon"
+              width="45px"
+            />
+            <h3 class="abt-heading">Experience</h3>
+          </div>
+
+          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="abt2">
+              <ul class="card-description">
+                <li class="more-desc">
+                  I have 10 years of Teaching Experience.
+                </li>
+                <li class="more-desc">
+                  I teach everything about English Language :-
+                </li>
+                <li class="more-desc">
+                  English Grammar, Spoken English, Competitive English English
+                  Literature, Formal and informal English, Written English, Oral
+                  English, School English, Foreign English, Indian English,
+                  Communicative English and anything or everything about English
+                  Language.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="abt-head">
+            <img src="icons/special-icon.svg" alt="" width="45px" />
+            <h3 class="abt-heading">Special</h3>
+          </div>
+
+          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="abt3">
+              <p class="card-description">
+                I give lectures on such topics as well e.g. Personality
+                Development, Motivation, Spirituality, Life Philosophy, Human
+                Psychology etc.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- services section (with aos) -->
@@ -142,46 +259,83 @@
 
         <div class="container">
           <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img src="images/coaching.jpg" alt="" class="img-sm" width="270px" style="border: 1px solid dodgerblue;">
+            <img
+              src="images/coaching.jpg"
+              alt=""
+              class="img-sm"
+              width="270px"
+              style="border: 1px solid dodgerblue"
+            />
             <h3 class="card-heading">Private Tutoring</h3>
             <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px">
+              <img src="icons/arrow-icon.svg" alt="" width="25px" />
               <p>ABCD English Study Point</p>
             </div>
           </div>
 
           <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img src="images/personality.png" alt="" class="img-sm" width="270px">
+            <img
+              src="images/personality.png"
+              alt=""
+              class="img-sm"
+              width="270px"
+            />
             <h3 class="card-heading">Personality Development</h3>
             <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px">
+              <img src="icons/arrow-icon.svg" alt="" width="25px" />
               <p>Interactive Sessions</p>
             </div>
           </div>
 
           <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img src="images/library.png" alt="" class="img-sm" width="270px">
+            <img src="images/library.png" alt="" class="img-sm" width="270px" />
             <h3 class="card-heading">Library</h3>
             <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px">
-              <p><a href="https://goo.gl/maps/eDoeChhH15ab46Wv7" target="_blank">Locate us</a></p>
+              <img src="icons/arrow-icon.svg" alt="" width="25px" />
+              <p>
+                <a href="https://goo.gl/maps/eDoeChhH15ab46Wv7" target="_blank"
+                  >Locate us</a
+                >
+              </p>
             </div>
           </div>
 
           <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <iframe width="270px" height="270px" src="https://www.youtube.com/embed/4UXbkUOB2cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe
+              width="270px"
+              height="270px"
+              src="https://www.youtube.com/embed/4UXbkUOB2cU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
             <h3 class="card-heading">Free Online Lectures</h3>
             <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px">
+              <img src="icons/arrow-icon.svg" alt="" width="25px" />
               <p>English Ek Khoj</p>
             </div>
           </div>
-
         </div>
 
         <!-- Developer information -->
-        <p id="devlpr-info">This website is Designed and Developed by <a href="https://dollyraghuwanshi.com" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" height="0.85em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="gray" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg> Dolly Raghuwanshi</a>.</p>
-
+        <p id="devlpr-info">
+          This website is Designed and Developed by
+          <a href="https://dollyraghuwanshi.com" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.85em"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                fill="gray"
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+              />
+            </svg>
+            Dolly Raghuwanshi</a
+          >.
+        </p>
       </section>
     </main>
 
@@ -191,30 +345,48 @@
       <section id="contact">
         <h4>Contact:</h4>
         <div class="foot">
-          <img src="icons/email-icon.svg" alt="" width="22px">
-          <p> sandy87rules@gmail.com</p>
+          <img src="icons/email-icon.svg" alt="" width="22px" />
+          <p>sandy87rules@gmail.com</p>
         </div>
 
         <div class="foot">
-          <img src="icons/whatsapp-icon.svg" alt="" width="22px">
-          <p> 9827662450</p>
+          <img src="icons/whatsapp-icon.svg" alt="" width="22px" />
+          <p>9827662450</p>
         </div>
-
       </section>
 
       <section id="follow">
         <h4>Social Links:</h4>
-        <a href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL" target="_blank"><img src="icons/fb-icon.svg" alt="" class="icn"></a>
-        <a href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM=" target="_blank"><img src="icons/insta-icon.svg" alt="" class="icn"></a>
-        <a href="https://www.youtube.com/@englishekkhoz8279" target="_blank"><img src="icons/yt-icon.svg" alt="" class="icn"></a>
-        <a href="https://t.me/englishistolearn" target="_blank"><img src="icons/telegram-icon.svg" alt="" class="icn"></a>
+        <a
+          href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL"
+          target="_blank"
+          ><img src="icons/fb-icon.svg" alt="" class="icn"
+        /></a>
+        <a
+          href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM="
+          target="_blank"
+          ><img src="icons/insta-icon.svg" alt="" class="icn"
+        /></a>
+        <a href="https://www.youtube.com/@englishekkhoz8279" target="_blank"
+          ><img src="icons/yt-icon.svg" alt="" class="icn"
+        /></a>
+        <a href="https://t.me/englishistolearn" target="_blank"
+          ><img src="icons/telegram-icon.svg" alt="" class="icn"
+        /></a>
       </section>
 
       <section id="address">
         <h4>Registered office:</h4>
         <div class="foot">
-          <a href="https://goo.gl/maps/eDoeChhH15ab46Wv7" target="_blank" for="location"><img src="icons/loc-icon.svg" alt="" width="22px"></a>
-          <address id="location"> GANJ BASODA, Dist. Vidisha, M.P, India</address>
+          <a
+            href="https://goo.gl/maps/eDoeChhH15ab46Wv7"
+            target="_blank"
+            for="location"
+            ><img src="icons/loc-icon.svg" alt="" width="22px"
+          /></a>
+          <address id="location">
+            GANJ BASODA, Dist. Vidisha, M.P, India
+          </address>
         </div>
       </section>
       <p id="copy">&copy; 2023 Sandeep Raghuwanshi. All rights reserved.</p>
@@ -226,7 +398,7 @@
     <script>
       AOS.init();
     </script>
-    
+
     <!-- my javascript -->
 
     <script src="script.js"></script>
