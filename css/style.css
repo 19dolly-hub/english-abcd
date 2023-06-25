@@ -50,6 +50,7 @@ body {
   background-attachment: fixed;
   background-image: url(images/R.jpg);
   background-size: cover;
+  text-rendering: optimizeLegibility;
 }
 
 /* Navigation Styles */
@@ -142,7 +143,7 @@ header {
   padding-bottom: 10vh;
 }
 
-h1 {
+.animation h1 {
   font-size: 3rem;
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
   margin-top: 4vh;
@@ -182,8 +183,12 @@ p {
   font-weight: bolder;
 }
 
-/* Buttons Styles */
-.btn {
+/* Buttons Styles */ 
+#btn-flex {
+  display: flex;
+}
+
+.btn2, #btn {
   font-size: 1.3rem;
   border: 3px solid white;
   padding: 1%;
@@ -191,12 +196,13 @@ p {
   font-family: cursive;
   font-weight: bold;
   color: white;
+  margin: 2px;
   margin-top: 2vh;
   background-color: #ffa4b4;
   position: relative;
 }
 
-.btn:hover {
+.btn2:hover, #btn:hover {
   border: 3px solid rgb(0, 89, 255);
   color: rgb(0, 89, 255);
   cursor: pointer;

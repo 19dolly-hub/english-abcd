@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
 let nav = document.querySelector('.navbar');
 
 function addBg() {
-  console.log('scroll detected');
+  // console.log('scroll detected');
   nav.classList.add('nav-bg');
 } 
 
@@ -32,7 +32,7 @@ if (el) {
   // console.log('document found');
   el.addEventListener('scroll', addBg);
 } else {
-  console.error('Document element not found');
+  // console.error('Document element not found');
 }
 
 // Change Navbar style According to screen size
@@ -47,10 +47,10 @@ function sideNav() {
 let btn = document.querySelector('.nav-btn');
 
 if (btn) {
-  console.log('button found');
+  // console.log('button found');
   btn.addEventListener('click', sideNav);
 } else {
-  console.error('button not found');
+  // console.error('button not found');
 }
 
 // Functions for Buttons
