@@ -105,18 +105,19 @@ body {
   border: 2px solid white;
   padding: 3px;
   border-radius: 20%;
-  position: absolute;
+  /* position: absolute;
   top: 2.5px;
-  right: 2.5px;
+  right: 2.5px; */
 }
 
 .bar {
   display: block;
   height: 2px;
-  width: 10px;
+  width: 15px;
   background-color: white;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  /* margin-top: 3px;
+  margin-bottom: 3px; */
+  margin: 5px;
 }
 
 .nav-btn:hover {
@@ -199,7 +200,7 @@ p {
   margin: 2px;
   margin-top: 2vh;
   background-color: #ffa4b4;
-  position: relative;
+  /* position: relative; */
   text-decoration: none;
 }
 
@@ -326,6 +327,7 @@ h2::after {
 #devlpr-info {
   color: darkgray;
   font-size: medium;
+  text-align: center;
 }
 
 #devlpr-info a {
@@ -432,6 +434,9 @@ address {
     flex-direction: column;
     align-items: center;
   }
+  h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -447,6 +452,9 @@ address {
   .content {
     text-align: -webkit-center;
   }
+  #btn-flex {
+    justify-content: center;
+  }
   footer {
     grid-template-areas:
       "a b"
@@ -459,12 +467,15 @@ address {
     font-size: 2rem;
   }
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .img-sm {
     width: 200px;
   }
   .card {
     width: -webkit-fill-available;
+  }
+  #copy {
+    font-size: 0.8rem;
   }
 }

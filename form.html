@@ -25,15 +25,24 @@
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      .form-logo {
+        text-align: right;
+        margin: 10px 5px 0 0;
+      }
+      .form-logo img {
+        width: 60px;
+      }
       .form-section {
         color: white;
         text-align: center;
         margin: 0 65px;
-        padding: 20px;
+        padding: 15px;
       }
-      .form-logo {
-        text-align: right;
-        margin: 10px 5px 0 0;
+      .form-section div {
+        justify-content: center;
+      }
+      .form-section div p {
+        font-size: larger;
       }
     </style>
   </head>
@@ -64,7 +73,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #ffa4b4">
+        <div class="modal-content" style="background-color: #ffd1d9e6;">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">
               Contact Form
@@ -168,12 +177,12 @@
             for="location"
             ><img src="icons/loc-icon.svg" alt="" width="22px"
           /></a>
-          <p id="location">
-            GANJ BASODA, Dist. Vidisha, M.P, India
-          </p>
+          <p id="location">GANJ BASODA, Dist. Vidisha, M.P, India</p>
         </div>
       </section>
-      <p id="copy">&copy; 2023 Sandeep Raghuwanshi. All rights reserved.</p>
+      <div>
+        <p id="copy">&copy; 2023 Sandeep Raghuwanshi. All rights reserved.</p>
+      </div>
       <!-- </footer> -->
     </section>
   </body>
