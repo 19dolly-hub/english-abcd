@@ -32,21 +32,15 @@ window.onscroll = function() {
 
 // Change Navbar style According to screen size
 let rightNav = document.querySelector('.right-nav');
+let btn = document.querySelector('.nav-btn');
 
 function sideNav() {
-  // console.log('click detected');
   rightNav.classList.toggle('opacity');
 }
 
 // Activate side Nav on click
-let btn = document.querySelector('.nav-btn');
+btn.addEventListener('click', sideNav);
 
-if (btn) {
-  // console.log('button found');
-  btn.addEventListener('click', sideNav);
-} else {
-  // console.error('button not found');
-}
 
 // Functions for Buttons
 function scrollToSection(id) {

@@ -59,6 +59,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  height: 52px;
   position: sticky;
   top: 0;
   background: transparent;
@@ -101,13 +102,11 @@ body {
 /* Hamburger Styles */
 .nav-btn {
   display: none;
-  background: none;
+  background: transparent;
   border: 2px solid white;
   padding: 3px;
   border-radius: 20%;
-  /* position: absolute;
-  top: 2.5px;
-  right: 2.5px; */
+  transition: opacity 0.3s ease;
 }
 
 .bar {
@@ -115,14 +114,11 @@ body {
   height: 2px;
   width: 15px;
   background-color: white;
-  /* margin-top: 3px;
-  margin-bottom: 3px; */
   margin: 5px;
 }
 
 .nav-btn:hover {
   opacity: 0.7;
-  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
@@ -392,93 +388,3 @@ address {
   grid-area: d;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 830px) {
-  .main {
-    flex-direction: column-reverse;
-    padding-top: 5vh;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .right-nav {
-    display: flex;
-    width: 60%;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 1%;
-    left: 40%;
-    background-color: dimgray;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .opacity {
-    visibility: collapse;
-  }
-
-  .nav-btn {
-    display: block;
-  }
-
-  footer {
-    grid-template-areas:
-      "a b"
-      ". c"
-      "d .";
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .card-heading {
-    font-size: 1.5rem;
-  }
-  .content span {
-    font-size: 1.5rem;
-  }
-  .content {
-    text-align: -webkit-center;
-  }
-  #btn-flex {
-    justify-content: center;
-  }
-  footer {
-    grid-template-areas:
-      "a b"
-      "c d";
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-  }
-  .img-sm {
-    width: 200px;
-  }
-  .card {
-    width: -webkit-fill-available;
-  }
-  #copy {
-    font-size: 0.8rem;
-  }
-}
