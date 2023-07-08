@@ -46,7 +46,8 @@ btn.addEventListener('click', sideNav);
 function scrollToSection(id) {
   let section = document.querySelector(id);
   if (section) {
-     setTimeout(function() {
-       section.scrollIntoView({ behavior: 'smooth' });
-     }, 100);   }
+    setTimeout(function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }, 100);   
+  }
 }

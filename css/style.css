@@ -157,7 +157,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   margin: 0 auto;
-  animation: typing 3s steps(15, end);
+  animation: typing 3s steps(15, end) 2s;
 }
 
 @keyframes typing {
