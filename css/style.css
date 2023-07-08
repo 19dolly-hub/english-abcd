@@ -59,7 +59,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  height: 52px;
   position: sticky;
   top: 0;
   background: transparent;
@@ -84,7 +83,7 @@ body {
 }
 
 .logo {
-  width: 51px;
+  width: 52px;
   border: 0.5px solid rgb(255, 164, 180);
   border-radius: 50%;
 }
@@ -139,7 +138,7 @@ header {
 
 h1 {
   font-size: 3rem;
-  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+  font-family: math;
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
@@ -168,7 +167,7 @@ h1 {
 
 p {
   font-size: 1.5rem;
-  font-family: ui-monospace;
+  font-family: math;
   line-height: 1.5;
 }
 
@@ -194,7 +193,6 @@ p {
   margin: 2px;
   margin-top: 2vh;
   background-color: #ffa4b4;
-  /* position: relative; */
   text-decoration: none;
 }
 
@@ -219,7 +217,6 @@ p {
 
 .para-sm {
   font-size: 1.2rem;
-  font-family: math;
   text-align: center;
   color: gray;
   padding-top: 7px;
@@ -265,7 +262,6 @@ h2::after {
 .abt-heading {
   font-size: 1.6rem;
   color: #7c7c7c;
-  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
   text-align: center;
   padding: 2px;
 }
@@ -276,13 +272,9 @@ h2::after {
   font-size: 1.2rem;
   margin: 0;
   padding: 10px;
-  font-family: math;
 }
 
 .more-desc {
-  color: black;
-  line-height: 1.5;
-  font-size: 1.2rem;
   margin: 5px;
   margin-left: 14px;
   font-family: math;
@@ -315,7 +307,6 @@ h2::after {
 .card-heading {
   font-size: 1.6rem;
   color: #7c7c7c;
-  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
 }
 
 /* Developer information */
