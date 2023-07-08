@@ -21,18 +21,13 @@ window.addEventListener('load', () => {
 
 let nav = document.querySelector('.navbar');
 
-function addBg() {
-  // console.log('scroll detected');
-  nav.classList.add('nav-bg');
-} 
-
-let el = document;
-
-if (el) {
-  // console.log('document found');
-  el.addEventListener('scroll', addBg);
-} else {
-  // console.error('Document element not found');
+window.onscroll = function() {
+  if (window.scrollY > 0) {
+    nav.classList.add('nav-bg');
+  }
+  else {
+    nav.classList.remove('nav-bg');
+  }
 }
 
 // Change Navbar style According to screen size
