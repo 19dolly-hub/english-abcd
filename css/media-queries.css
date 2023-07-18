@@ -1,6 +1,9 @@
 /* Media Queries */
 
 @media only screen and (max-width: 830px) {
+  body {
+    background-size: auto;
+  }
   .main {
     flex-direction: column-reverse;
     padding-top: 2vh;
@@ -26,13 +29,14 @@
     align-items: center;
     position: absolute;
     top: 1%;
-    left: 40%;
+    right: 0;
     background-color: dimgray;
     transition: all 0.3s linear;
   }
 
   .opacity {
     visibility: hidden;
+    width: 0;
   }
 
   .nav-btn {
