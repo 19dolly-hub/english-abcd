@@ -8,11 +8,9 @@
     flex-direction: column-reverse;
     padding-top: 2vh;
   }
-  .navbar {
-    position: sticky;
-    top: 1%;
-  }
+  
 }
+
 
 @media only screen and (max-width: 740px) {
 

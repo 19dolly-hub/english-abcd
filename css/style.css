@@ -55,13 +55,16 @@ body {
 }
 
 /* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  position: sticky;
-  top: 0;
   background: transparent;
   transition: all 0.3s linear;
 }
@@ -125,8 +128,8 @@ body {
 /* Home Section Styles */
 header {
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .main {
