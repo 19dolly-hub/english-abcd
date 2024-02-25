@@ -2,344 +2,679 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffa4b4" />
     <meta name="keywords" content="english, english teacher, english grammer, spoken english, english speaking, sandeep raghuwanshi, any body can do, abcd, abcd coaching, ganj basoda, basoda">
+    <title>ABCD By Sandeep Sir</title>
+    <!-- CUSTOM CSS -->
+    <style>
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+      .pre-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
 
-    <title>ABCD BY SANDEEP SIR</title>
+        width: 100%;
+        height: 100%;
 
-    <!-- animate on scroll css-->
+        display: -ms-grid;
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- my css -->
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-queries.css" />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1BLYSPD5BZ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+        display: grid;
+        place-items: center;
+        background-color: #2f001a;
       }
-      gtag("js", new Date());
 
-      gtag("config", "G-1BLYSPD5BZ");
-    </script>
+      [data-theme="light"] .pre-loader {
+        background-color: #ffa4d6;
+      }
+
+      .pre-loader div {
+        text-transform: uppercase;
+        text-align: center;
+
+        font-size: 7vmax;
+        letter-spacing: -0.3vmax;
+        line-height: 1.2;
+      }
+
+      .abcd {
+        color: #fff;
+        font-weight: 500;
+      }
+
+      [data-theme="light"] .abcd {
+        color: #ff008c;
+      }
+
+      .pre-loader sub {
+        font-size: 4vmax;
+      }
+
+      .pre-loader svg {
+        width: 6vmax; /*4rem*/
+        fill: #fff;
+        -webkit-filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(0 0 10px #fff);
+        -webkit-animation: loading-anim 0.9s linear infinite alternate;
+        animation: loading-anim 0.9s linear infinite alternate;
+      }
+
+      [data-theme="light"] .pre-loader svg {
+        fill: #ff008c;
+        -webkit-filter: drop-shadow(0 0 10px #ff008c);
+        filter: drop-shadow(0 0 10px #ff008c);
+      }
+
+      @-webkit-keyframes loading-anim {
+        to {
+          -webkit-transform: rotate(135deg) scale(0.7);
+          transform: rotate(135deg) scale(0.7);
+        }
+      }
+
+      @keyframes loading-anim {
+        to {
+          -webkit-transform: rotate(135deg) scale(0.7);
+          transform: rotate(135deg) scale(0.7);
+        }
+      }
+
+      .pre-loader.close {
+        -webkit-transition: -webkit-transform 1s ease;
+        transition: -webkit-transform 1s ease;
+        -o-transition: transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease, -webkit-transform 1s ease;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- FAVICON -->  
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon/favicon.png">
+    <!-- REMIX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- loading animation -->
-    <div id="loading-container">
-      <div id="loading-animation"></div>
+  <body class="disable-scroll">
+    <div class="pre-loader">
+      <div>
+        <p>welcome to</p>
+        <p><span class="abcd">abcd</span> <sub>by sandeep sir</sub></p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 122.88 122.88"
+          width="64"
+        >
+          <title>playing-card-diamond-shape</title>
+          <path
+            class="cls-1"
+            d="M0,61.51A234.72,234.72,0,0,0,61.51,0a204.09,204.09,0,0,0,61.37,61.37,229.27,229.27,0,0,0-61.39,61.51A215.26,215.26,0,0,0,0,61.51Z"
+          />
+        </svg>
+      </div>
     </div>
 
-    <!-- navigation bar -->
-
-    <nav>
-      <div class="navbar">
-        <div class="left-nav">
-          <img src="images/logo.webp" alt="logo" class="logo" />
-        </div>
-        <div class="right-nav opacity">
-          <a class="flex-item" href="#home">Home</a>
-          <a class="flex-item" href="#about">About</a>
-          <a class="flex-item" href="#services">Services</a>
-          <a class="flex-item" href="form.html">Contact</a>
-
-          <!-- reviews under construction -->
-          <!-- <a class="flex-item" href="#reviews">Reviews</a> -->
-        </div>
-
-        <!-- hamburger -->
-
-        <button class="nav-btn">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </button>
-      </div>
-    </nav>
-
-    <!-- home section -->
-
-    <header id="home">
-      <div class="main">
-        <div class="content">
-          <div class="animation">
-            <h1 class="text">Any Body Can Do</h1>
-          </div>
-          <p>
-            Hi, I'm <span>Sandeep Raghuwanshi</span>,<br />
-            Self Employed at my own run Coaching<br />
-            <span>ABCD English Study Point</span> <br />
-            in GANJ BASODA.
-          </p>
-
-          <!-- the buttons for the sections to be highlighted -->
-          <div id="btn-flex">
-            <button class="btn2" onclick="scrollToSection('#about')">
-              Read more...
-            </button>
-            <a href="form.html" class="btn2" role="button">Contact me</a>
-          </div>
-        </div>
-        <div class="image">
-          <img src="images/img.webp" alt="SANDEEP" class="profile-pic img-sm" />
-        </div>
-      </div>
-    </header>
-
-    <!-- other sections -->
-
     <main>
-      <!-- about section (with aos)-->
+      <div id="dot"></div>
+      <nav class="menu">
+        <div class="logo"></div>
+        <a href="#" class="nav-active" id="about-page">About</a>
+        <a href="#" id="services-page">Services</a>
+        <a href="#" class="abcd" id="students-page"><span>our</span>Students</a>
+        <a href="https://goo.gl/maps/eDoeChhH15ab46Wv7">Location</a>
+        <a href="mailto:sandy87rules@gmail.com">Contact</a>
+        <div id="theme-btn" title="toggle-theme">
+          <i class="ri-sun-fill" id="sun"></i>
+          <i class="ri-moon-clear-fill" id="moon"></i>
+        </div>
+        <i class="ri-menu-line" id="menu"></i>
+        <!--mobile-menu-->
+      </nav>
 
-      <section id="about">
-        <p class="para-sm">About Me</p>
-        <h2>English Teacher & Private Tutoring</h2>
-
-        <div class="abt-container">
-          <div class="abt-head">
-            <img src="icons/goal-icon.svg" alt="goal-icon" width="45px" />
-            <h3 class="abt-heading">My Mission</h3>
+      <header>
+        <div class="heading">
+          <div id="typed-strings">
+            <p>Any Body Can Do...</p>
           </div>
-
-          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="abt1">
-              <p class="card-description">
-                I am determined and committed to discover exciting and unique
-                concepts of language English in well explained manner.
-              </p>
-            </div>
+          <h1><span id="typed"></span></h1>
+        </div>
+        <img id="hero-img" src="" alt="Teacher" width="500" />
+        <!-- <a href="https://storyset.com/online">Online illustrations by Storyset</a> -->
+        <div class="description">
+          <p>
+            Hi, I'm Sandeep Raghuwanshi, <br />
+            Self Employed at my own run Coaching <br />
+            ABCD English Study Point in GANJ BASODA.
+          </p>
+          <div class="double-elem">
+            <h3 title="facebook">
+              <a href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL">
+                <i class="ri-facebook-box-line"></i>
+              </a>
+            </h3>
+            <h3 title="instagram">
+              <a href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM=">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </h3>
+            <h3 title="youtube">
+              <a href="https://www.youtube.com/@englishekkhoz8279">
+                <i class="ri-youtube-line"></i>
+              </a>
+            </h3>
           </div>
+        </div>
+      </header>
 
-          <div class="abt-head">
-            <img
-              src="icons/experience-icon.svg"
-              alt="experience-icon"
-              width="45px"
-            />
-            <h3 class="abt-heading">Experience</h3>
-          </div>
+      <div class="ruler">
+        <span>about me</span>
+        <span>what do i do ?</span>
+      </div>
 
-          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="abt2">
-              <ul class="card-description">
-                <li class="more-desc">
-                  I have 10 years of Teaching Experience.
-                </li>
-                <li class="more-desc">
-                  I teach everything about English Language :-
-                </li>
-                <li class="more-desc">
-                  English Grammar, Spoken English, Competitive English English
-                  Literature, Formal and informal English, Written English, Oral
-                  English, School English, Foreign English, Indian English,
-                  Communicative English and anything or everything about English
-                  Language.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="abt-head">
-            <img src="icons/special-icon.svg" alt="" width="45px" />
-            <h3 class="abt-heading">Special</h3>
-          </div>
-
-          <div class="abt-card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="abt3">
-              <p class="card-description">
-                I give lectures on such topics as well e.g. Personality
-                Development, Motivation, Spirituality, Life Philosophy, Human
-                Psychology etc.
-              </p>
-            </div>
+      <section class="about">
+        <img src="/sandeep.jpg" alt="sandeep" width="350" />
+        <div class="about-content">
+          <h3>I teach everything about English Language.</h3>
+          <div>
+            <span>english grammar</span>
+            <span>spoken english</span>
+            <span>competitive english</span>
+            <span>english literature</span>
+            <span>formal and informal english</span>
+            <span>written english</span>
+            <span>school english</span>
+            <span>foreign english</span>
+            <span>indian english</span>
+            <span>communicative english</span>
           </div>
         </div>
       </section>
 
-      <!-- services section (with aos) -->
-
-      <section id="services">
-        <p class="para-sm">What Do I Do ?</p>
-        <h2>My Services</h2>
-
-        <div class="container">
-          <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img
-              src="images/coaching.webp"
-              alt=""
-              class="img-sm"
-              width="270px"
-              style="border: 1px solid dodgerblue"
-            />
-            <h3 class="card-heading">Private Tutoring</h3>
-            <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px" />
-              <p>ABCD English Study Point</p>
-            </div>
-          </div>
-
-          <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img
-              src="images/personality.webp"
-              alt=""
-              class="img-sm"
-              width="270px"
-            />
-            <h3 class="card-heading">Personality Development</h3>
-            <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px" />
-              <p>Interactive Sessions</p>
-            </div>
-          </div>
-
-          <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <img
-              src="images/library.webp"
-              alt=""
-              class="img-sm"
-              width="270px"
-            />
-            <h3 class="card-heading">Library</h3>
-            <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px" />
-              <p>
-                <a href="https://goo.gl/maps/eDoeChhH15ab46Wv7" target="_blank"
-                  >Locate us</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="card" data-aos="fade-in" data-aos-duration="1000">
-            <iframe
-              width="270px"
-              height="270px"
-              src="https://www.youtube.com/embed/4UXbkUOB2cU"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <h3 class="card-heading">Free Online Lectures</h3>
-            <div class="foot">
-              <img src="icons/arrow-icon.svg" alt="" width="25px" />
-              <p>English Ek Khoj</p>
-            </div>
-          </div>
+      <div class="more-info">
+        <div class="info">
+          <i class="ri-star-smile-fill"></i>
+          <h3>Misson</h3>
+          <p>Discovering unique concepts of English language.</p>
         </div>
 
-        <!-- Developer information -->
-        <p id="devlpr-info">
-          This website is Designed and Developed by <br />
-          <a href="https://dollyraghuwanshi.com" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="0.85em"
-              viewBox="0 0 512 512"
-            >
-              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path
-                fill="gray"
-                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-              />
-            </svg>
-            Dolly Raghuwanshi</a
-          >.
+        <div class="info">
+          <i class="ri-star-smile-fill"></i>
+          <h3>Experience</h3>
+          <p>10+ years of Teaching experience.</p>
+        </div>
+
+        <div class="info">
+          <i class="ri-star-smile-fill"></i>
+          <h3>Special</h3>
+          <p>
+            Personality development, Motivation, Sprituality and much more...
+          </p>
+        </div>
+      </div>
+
+      <section class="map-section">
+        <h4 class="heading4">"Find Your Way to Success..."</h4>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3648.210512259248!2d77.9594574!3d23.8821528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3979579d9a8a2ac1%3A0xe0b1c3ddd2522f7b!2sABCD%20COMPETITIVE%20STUDY%20POINT!5e0!3m2!1sen!2sin!4v1707836218588!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h4 class="heading4"><i class="ri-survey-line"></i> Contact Form</h4>
+  
+        <form netlify>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required="">
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required=""></textarea>
+  
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+
+      <footer>
+        <p>
+          created with <img src="love.svg" alt="love" width="25" /> by
+          <a href="https://dollyraghuwanshi.com" class="abcd">dora</a>
         </p>
+      </footer>
+
+      <!-- <nav class="mobile-menu">
+        <a href="#" class="nav-active" id="mob-abt-pg">About</a>
+        <a href="#" id="mob-srvc-pg">Services</a>
+        <a href="#" class="abcd" id="mob-std-pg"><span>our</span>Students</a>
+        <a href="https://goo.gl/maps/eDoeChhH15ab46Wv7">Location</a>
+        <a href="mailto:sandy87rules@gmail.com">Contact</a>
+      </nav> -->
+
+      <section class="services-page">
+        <section class="cards">
+          <div class="card">
+            <img src="/teaching.svg" alt="Students" width="340" />
+            <h3>ABCD English Study Point.</h3>
+            <h4>Coaching Institute.</h4>
+          </div>
+          <div class="card">
+            <img src="/growth.svg" alt="Students" width="340" />
+            <h3>Personality Development.</h3>
+            <h4>Interactive sessions.</h4>
+          </div>
+          <div class="card">
+            <img src="/library.svg" alt="Students" width="340" />
+            <h3>Library.</h3>
+            <h4>Free Wi-Fi Access.</h4>
+          </div>
+        </section>
+
+        <section class="faqs">
+          <div class="accordion">
+            <h4>
+              frequently asked questions...<i class="ri-quill-pen-fill"></i>
+            </h4>
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion1" /><label
+                for="accordion1"
+                class="accordion-item-title"
+                ><span class="icon"></span>What types of courses do you offer at
+                ABCD English Study Point?</label
+              >
+              <div class="accordion-item-desc">
+                "At ABCD English Study Point, we offer comprehensive courses
+                covering various aspects of the English language, including
+                grammar, spoken English, competitive English, English
+                literature, formal and informal English, written English, school
+                English, foreign English, and communicative English."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion2" /><label
+                for="accordion2"
+                class="accordion-item-title"
+                ><span class="icon"></span>Are the courses suitable for
+                beginners?</label
+              >
+              <div class="accordion-item-desc">
+                "Yes, our courses are designed to cater to learners of all
+                levels, including beginners. Whether you're just starting your
+                English language learning journey or looking to improve your
+                existing skills, our courses provide a structured and supportive
+                environment for growth."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion3" /><label
+                for="accordion3"
+                class="accordion-item-title"
+                ><span class="icon"></span>How are the classes conducted?</label
+              >
+              <div class="accordion-item-desc">
+                "Our classes are conducted in-person at our coaching institute
+                in GANJ BASODA. We offer flexible scheduling options to
+                accommodate the needs of our students."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion4" /><label
+                for="accordion4"
+                class="accordion-item-title"
+                ><span class="icon"></span>What teaching methods do you
+                employ?</label
+              >
+              <div class="accordion-item-desc">
+                "We employ a variety of teaching methods to ensure effective
+                learning, including interactive lectures, group discussions,
+                role-playing exercises, multimedia presentations, and practical
+                activities. Our goal is to make the learning experience
+                engaging, enjoyable, and conducive to skill development."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion5" /><label
+                for="accordion5"
+                class="accordion-item-title"
+                ><span class="icon"></span>Do you provide personalized attention
+                to students?</label
+              >
+              <div class="accordion-item-desc">
+                "Yes, we believe in providing personalized attention to each
+                student to address their unique learning needs and challenges.
+                Our experienced instructors offer individualized guidance,
+                feedback, and support to help students achieve their language
+                learning goals."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion6" /><label
+                for="accordion6"
+                class="accordion-item-title"
+                ><span class="icon"></span>Do you offer any additional resources
+                or support?</label
+              >
+              <div class="accordion-item-desc">
+                "In addition to regular classes, we provide access to
+                supplementary learning materials, such as worksheets, practice
+                exercises, audiovisual resources, and online study resources. We
+                also offer guidance on exam preparation, career development, and
+                personal growth to our students."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion7" /><label
+                for="accordion7"
+                class="accordion-item-title"
+                ><span class="icon"></span>Can students interact with each other
+                outside of class?</label
+              >
+              <div class="accordion-item-desc">
+                "Yes, we encourage collaboration and interaction among students
+                outside of class through discussion forums, study groups, and
+                social events. Building a supportive learning community fosters
+                peer learning and enhances the overall learning experience."
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input type="checkbox" id="accordion8" /><label
+                for="accordion8"
+                class="accordion-item-title"
+                ><span class="icon"></span>What sets ABCD English Study Point
+                apart from other coaching institutes?</label
+              >
+              <div class="accordion-item-desc">
+                "At ABCD English Study Point, we distinguish ourselves through
+                our experienced faculty, comprehensive curriculum, personalized
+                approach, interactive teaching methods, and commitment to
+                student success. We strive to create a nurturing learning
+                environment where every student can thrive and reach their full
+                potential."
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="social-links">
+          <a href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM=">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.youtube.com/@englishekkhoz8279">
+            <i class="ri-youtube-line"></i>
+          </a>
+          <a href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+          <p>Join me!</p>
+        </div>
+      </section>
+
+      <section class="students-page">
+        <section class="content">
+          <p>
+            Many students have been helped in personality developmennt and in
+            improving their communication skills which play an important role in
+            career growth.
+          </p>
+          <img src="/student.svg" alt="Students" width="500" />
+          <!-- <a href="https://storyset.com/online">Online illustrations by Storyset</a> -->
+        </section>
+
+        <section class="marquee">
+          <div class="marquee-inner">
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Shakti Rajput</p>
+                <p>Placed at Hotstar.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Shakti Rajput</p>
+                <p>Placed at Hotstar.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Shakti Rajput</p>
+                <p>Placed at Hotstar.</p>
+              </div>
+            </div>
+
+            <div class="student-card repeat">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Shakti Rajput</p>
+                <p>Placed at Hotstar.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+
+            <div class="student-card">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
+                alt="Student"
+                width="50"
+              />
+              <div>
+                <p>Laxmi Raghuwanshi</p>
+                <p>Placed in Income Tax Department.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="videos">
+          <h4 class="heading4">"Engaging Classroom Experiences"</h4>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/qaCupYYX90Q?si=ZGlBDtLvxH4d7lVD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IRTcueGiApU?si=4-fVcMB84-KpsMAb"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4UXbkUOB2cU?si=JHQ0MPwDY50xG4iN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ycYW21oGpqU?si=G3_lIThljCRZ370D"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </section>
+
+        <div class="social-links">
+          <a href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM=">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.youtube.com/@englishekkhoz8279">
+            <i class="ri-youtube-line"></i>
+          </a>
+          <a href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+          <p>Join me!</p>
+        </div>
       </section>
     </main>
 
-    <!-- footer section -->
-
-    <footer>
-      <section id="contact">
-        <h4>Contact:</h4>
-        <div class="foot">
-          <img src="icons/email-icon.svg" alt="" width="22px" />
-          <p>sandy87rules@gmail.com</p>
-        </div>
-
-        <div class="foot">
-          <img src="icons/whatsapp-icon.svg" alt="" width="22px" />
-          <p>9827662450</p>
-        </div>
-      </section>
-
-      <section id="follow">
-        <h4>Social Links:</h4>
-        <a
-          href="https://www.facebook.com/sandy87rules?mibextid=ZbWKwL"
-          target="_blank"
-          ><img src="icons/fb-icon.svg" alt="" class="icn"
-        /></a>
-        <a
-          href="https://instagram.com/sandy87rules?igshid=ZDdkNTZiNTM="
-          target="_blank"
-          ><img src="icons/insta-icon.svg" alt="" class="icn"
-        /></a>
-        <a href="https://www.youtube.com/@englishekkhoz8279" target="_blank"
-          ><img src="icons/yt-icon.svg" alt="" class="icn"
-        /></a>
-        <a href="https://t.me/englishistolearn" target="_blank"
-          ><img src="icons/telegram-icon.svg" alt="" class="icn"
-        /></a>
-      </section>
-
-      <section id="address">
-        <h4>Registered office:</h4>
-        <div class="foot">
-          <a
-            href="https://goo.gl/maps/eDoeChhH15ab46Wv7"
-            target="_blank"
-            for="location"
-            ><img src="icons/loc-icon.svg" alt="" width="22px"
-          /></a>
-          <address id="location">
-            GANJ BASODA, Dist. Vidisha, M.P, India
-          </address>
-        </div>
-      </section>
-      <p id="copy">&copy; 2023 Sandeep Raghuwanshi. All rights reserved.</p>
-    </footer>
-
-    <!-- animate on scroll javascript -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-    <!-- my javascript -->
-
-    <script src="script.js"></script>
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SCROLL TRIGGER -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- CUSTOM JS -->
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
