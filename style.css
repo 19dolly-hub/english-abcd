@@ -528,6 +528,7 @@ header img {
 }
 
 input, textarea {
+  color: inherit;
   background-color: transparent;
   border: 1.5px solid #dadada;
   border-radius: 5px;
