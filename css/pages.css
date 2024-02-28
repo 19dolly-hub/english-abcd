@@ -1,0 +1,328 @@
+.services-page,
+.students-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-500%);
+  -ms-transform: translateY(-500%);
+  transform: translateY(-500%);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  background-color: var(--bg);
+  padding-inline: 2rem;
+  padding-top: 20vh;
+}
+
+.show-page {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  z-index: 40;
+  overflow-y: scroll;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  gap: 1rem;
+}
+
+.cards > * {
+  width: 30%;
+  border: 1px solid var(--highlight);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.faqs {
+  text-align: center;
+}
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 991px;
+  /* min-width: 320px; */
+  padding: 2% 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.accordion h4, .heading4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.accordion-item {
+  margin-top: 1rem;
+  border: 1px solid #878787;
+  border-radius: 6px;
+  background-color: var(--link-bg);
+  color: var(--link-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.accordion-item:hover {
+  background-color: var(--link-color);
+  color: var(--link-bg);
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.accordion-item .accordion-item-title {
+  position: relative;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* width: 100%; */
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.accordion-item .accordion-item-desc {
+  display: none;
+  font-size: 0.89rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  color: #20202c;
+  background: #fafafa;
+  border-top: 1px dashed #ddd;
+  padding: 10px 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+  display: block;
+}
+.accordion-item
+  input[type="checkbox"]:checked
+  ~ .accordion-item-title
+  .icon:after {
+  content: "-";
+  font-size: 1.2rem;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+  content: "+";
+  font-size: 1.2rem;
+}
+.accordion-item:first-child {
+  margin-top: 0;
+}
+.accordion-item .icon {
+  margin-left: 0.9rem;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    padding: 0 1rem;
+  }
+  .accordion h4, .heading4 {
+    font-size: 1.1rem;
+  }
+}
+
+.social-links {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.social-links a {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--highlight);
+  -webkit-filter: drop-shadow(0 0 12px);
+  filter: drop-shadow(0 0 12px);
+}
+
+
+/* STUDENTS PAGE */
+
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.content p {
+  font-size: 1.4rem;
+}
+
+.content p::before {
+  content: "\201C";
+  color: var(--highlight);
+  font-size: 2.8rem;
+}
+
+.marquee {
+  margin: auto;
+  max-width: 90vw;
+  overflow: hidden;
+  -webkit-mask: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(10%, white),
+    color-stop(90%, white),
+    to(transparent)
+  );
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(10%, white),
+    color-stop(90%, white),
+    to(transparent)
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.marquee-inner {
+  padding-block: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  /* animation: marquee 30s linear infinite; */
+}
+
+@-webkit-keyframes marquee {
+  to {
+    -webkit-transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@keyframes marquee {
+  to {
+    -webkit-transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.students-page.show-page .marquee-inner {
+  -webkit-animation: marquee 30s linear infinite;
+  animation: marquee 30s linear infinite;
+}
+
+.student-card {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 205px;
+  gap: 8px;
+  background-color: var(--different);
+  color: var(--link-color);
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1.5px 5px rgb(0, 0, 1, 0.4);
+  box-shadow: 0 1.5px 5px rgb(0, 0, 1, 0.4);
+}
+
+.student-card:nth-child(2n-1) {
+  background-color: var(--link-bg);
+}
+
+.student-card img {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  border: 3px solid #fff;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+}
+
+.student-card div {
+  padding-top: 14.5%;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.student-card div p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* .repeat {
+  background-color: yellow !important;
+} */
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}

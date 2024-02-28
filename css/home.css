@@ -1,0 +1,159 @@
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--loader-pink);
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .about img {
+    width: 40%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .about-content {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .about-content h3 {
+    color: var(--link-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .about-content span {
+    display: inline-block;
+    background-color: var(--link-color);
+    color: var(--different);
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  
+  .more-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5%;
+    width: 80vw;
+    margin-block: 3rem;
+    margin-inline: auto;
+  }
+  
+  .info {
+    width: 30%;
+  }
+  
+  .info i {
+    font-size: 2.5rem;
+  }
+  
+  .info h3 {
+    color: var(--link-bg);
+  }
+  
+  .info p {
+    font-weight: 500;
+  }
+  
+  .map {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .map iframe {
+    max-width: 95vw;
+  }
+  
+  .map-section h4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact {
+    width: 80vw;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 1.2px solid var(--link-bg);
+    border-radius: 5px;
+    color: var(--highlight);
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .contact h4 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.8px solid;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+  }
+  
+  input, textarea {
+    color: inherit;
+    background-color: transparent;
+    border: 1.5px solid #dadada;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--highlight);
+    color: var(--submit);
+  }
+  
+  footer {
+    text-align: center;
+    padding-block: 10px;
+  }
+  
+  footer img {
+    display: inline-block;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    -webkit-filter: saturate(5);
+    filter: saturate(5);
+  }
+  

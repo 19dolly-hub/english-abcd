@@ -11,7 +11,7 @@ document.documentElement.setAttribute("data-theme", localTheme);
 const loading = () => {
   document.querySelector(".pre-loader").classList.add("close");
   document.body.classList.remove("disable-scroll");
-  document.getElementById("hero-img").setAttribute("src", "/hero.svg");
+  document.getElementById("hero-img").setAttribute("src", "/images/hero.svg");
 
   typingAnim();
   cursorAnim();
